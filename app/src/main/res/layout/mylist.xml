@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tvStation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Rest Stop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="11:00 - 5:00"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvStation"
+
+        tools:layout_editor_absoluteY="45dp" />
+
+    <TextView
+        android:id="@+id/tvHourSeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="6h 15m - 12 seats"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTime"
+        tools:layout_editor_absoluteY="57dp" />
+
+    <ImageView
+        android:id="@+id/ivOfflogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_tag"
+        app:layout_constraintRight_toLeftOf="@+id/tvOffer"
+        app:layout_constraintTop_toTopOf="@id/tvOffer" />
+
+    <TextView
+        android:id="@+id/tvOffer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:text="20% Off"
+        android:textColor="@android:color/holo_red_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPreviousrate"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_marginLeft="155dp"
+        android:background="@drawable/ic_substract"
+        android:text="previousRate"
+
+        app:layout_constraintLeft_toRightOf="@+id/tvTime"
+        app:layout_constraintTop_toBottomOf="@+id/ivOfflogo" />
+
+    <TextView
+        android:id="@+id/tvNewrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Rate"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintLeft_toRightOf="@+id/tvPreviousrate"
+        app:layout_constraintTop_toTopOf="@+id/tvPreviousrate"
+        />
+
+    <TextView
+        android:id="@+id/tvTravels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Travels"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/tvHourSeat"
+        app:layout_constraintTop_toBottomOf="@id/tvHourSeat"
+       />
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descriptionsdfs  sdf sds ds"
+        app:layout_constraintStart_toStartOf="@id/tvHourSeat"
+        app:layout_constraintTop_toBottomOf="@id/tvTravels"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="100dp" />
+
+
+    <ImageView
+        android:id="@+id/ivbuslogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_train"
+        app:layout_constraintStart_toStartOf="@id/tvHourSeat"
+        app:layout_constraintTop_toBottomOf="@id/tvDescription"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="100dp" />
+
+    <TextView
+        android:id="@+id/tvBusType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Express Bus "
+        android:layout_marginLeft="5dp"
+        app:layout_constraintLeft_toRightOf="@+id/ivbuslogo"
+        app:layout_constraintTop_toBottomOf="@id/tvDescription"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="100dp" />
+
+
+    <Button
+        android:id="@+id/imageButton1"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintLeft_toRightOf="@+id/tvTravels"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvNewrate"
+        android:background="@drawable/star"
+         />
+
+    <TextView
+        android:id="@+id/imageButton2"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:text="600"
+        android:layout_marginRight="5dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton1" />
+
+    <View
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBusType"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/darker_gray"
+        android:layout_height="1dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

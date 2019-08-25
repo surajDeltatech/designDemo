@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/previous"
+        android:icon="@drawable/ic_navigate_before_black_24dp"
+        app:showAsAction="always"
+        android:title="before"/>
+    <item android:id="@+id/date"
+        android:title="9 AUG"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/next"
+        android:icon="@drawable/ic_navigate_next_black_24dp"
+        app:showAsAction="always"
+        android:title="next"/>
+
+</menu>
